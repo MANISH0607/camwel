@@ -1,0 +1,390 @@
+ /* Reset default padding/margin */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ /* Top Bar */
+ .top-bar {
+     background-color: #00497a;
+     /* deep blue */
+     color: #fff;
+     font-size: 14px;
+     padding: 5px 0px;
+ }
+
+ .top-bar .container {
+     max-width: 1200px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: auto;
+     padding: 0 10px;
+ }
+
+ .top-bar .contact {
+
+     font-family: Arial, sans-serif;
+ }
+
+ .social-icons a {
+     color: #1378dd;
+     background-color: #efeff5fa;
+     border-radius: 3px;
+     padding: 5px 8px;
+     margin-left: 5px;
+     text-decoration: none;
+     font-size: 14px;
+     /* color: #1378dd;
+     background-color: #efeff5fa;
+     margin-left: 5px;
+     font-size: 14px;
+     border-radius: 3px;
+     padding: 5px 8px;
+     text-decoration: none; */
+
+ }
+
+ /* Main Header / Navigation */
+ .main-header {
+     background: linear-gradient(to right, #319d9a, #329c8e);
+     padding: 20px 0;
+
+     /* teal blend */
+ }
+
+ .nav-container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0px 15px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .logo img {
+     margin-left: 20px;
+     height: 50px;
+     /* adjust to desired height */
+ }
+
+ /* Navbar links */
+ .navbar nav a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 14px;
+     font-family: Arial, sans-serif;
+     padding: 10px 15px;
+     border-radius: 4px;
+     transition: background-color 0.3s;
+ }
+
+ .navbar nav a:hover {
+     background-color: rgb(226, 29, 29);
+ }
+
+ /* Responsive adjustments (optional) */
+ @media (max-width: 768px) {
+     .nav-container {
+         flex-direction: column;
+     }
+
+     .navbar nav {
+         margin-top: 10px;
+     }
+
+     .navbar nav a {
+         margin: 8px 0;
+     }
+ }
+
+ /* Services / Plans Section */
+
+ @keyframes fadeInDown {
+     0% {
+         opacity: 0;
+         transform: translateY(-40px);
+     }
+
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .center {
+     animation: fadeInDown 0.9s ease-out;
+ }
+
+
+ #services {
+     background: #f8f8f8;
+     padding: 40px 0;
+ }
+
+ /* Centered blue header */
+#services .center h2 {
+     text-align: center;
+     background: #8fd2f6;
+     padding: 8px 20px;
+     font-size: 28px;
+     font-weight: bold;
+     border-radius: 4px;
+     margin-bottom: 5px;
+ }
+
+ /* Plan container styling */
+ #services .main {
+     margin: 20px 0;
+     position: relative;
+ }
+
+ /* Plan Heading with dotted border */
+ #services .heading h2 {
+     position: relative;
+     text-align: center;
+     background: #f8f8f8;
+     padding: 6px 16px;
+     font-size: 20px;
+     font-weight: 600;
+     border: 3px dotted red;
+     border-radius: 26px 5px 26px 0px;
+ }
+
+ /* #services .heading h2::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     border: 2px dotted #d33;
+     border-radius: 30px 0 30px 30px;
+     z-index: -1;
+ } */
+
+ /* Dark plan box with white border and rounded corners */
+ #services .inner_box {
+     background-color: #2B3042;
+     border-radius: 50px 5px;
+     border: 2px solid white;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     transition: all 300ms;
+     
+ }
+     /* background: #262c3e;
+  border: 2px solid #fff;
+  border-radius: 0 40px 40px 40px;
+  padding: 30px 20px 20px;
+  text-align: center;
+  color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; */
+ 
+
+ /* "upto" / speed section */
+ .section_1 {
+     display: flex;
+     justify-content: center;
+     padding: 15px;
+ }
+
+ #services .section_1 p {
+     color: #fff;
+     margin: 0;
+     font-size: 15px;
+     text-transform: lowercase;
+     font-weight: 800;
+ }
+
+ #services .section_1 h1 {
+     margin: 0px;
+     color: yellow;
+     font-weight: 700;
+     font-family: serif;
+ }
+
+ .btmk {
+
+     display: flex;
+     align-items: end;
+
+ }
+
+ #services .section_1 .btmk p.add-p-mb {
+     margin: 0;
+     font-size: 18px;
+ }
+
+ /* Pricing rows */
+ #services .row_1 {
+     display: flex;
+     justify-content: center;
+ }
+ /* justify-content: space-between; */
+     /* background: #60636a; */
+     /* margin: 10px 0;
+     padding: 12px;
+     border-radius: 4px; */
+
+ .left {
+     margin-right: 5px;
+ }
+
+ .left p {
+     padding: 8px;
+     background-color: #808080a1;
+     color: white;
+     width: 90px;
+     font-weight: 800;
+ }
+
+ .right p {
+     padding: 8px;
+     background-color: #808080a1;
+     color: white;
+     /* font-weight: 500; */
+     width: 90px;
+     font-weight: 800;
+ }
+
+ #services .main:hover .inner_box {
+     background: #000;
+     
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+     
+ }
+
+ /* #services .main:hover .inner_box {
+  background: #000;
+  transform: scale(1.02);
+  border-color: #ffd800;
+} */
+
+ /* #services .row_1 .left,
+ #services .row_1 .right {
+     width: 48%;
+     text-align: center;
+ } */
+
+ /* #services .row_1 .right p {
+     margin: 0;
+     font-weight: bold;
+ } */
+
+         /* footer */
+
+ .footer-row {
+
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to left, #d16e48, #4c429d);
+  color: #fff;
+  padding: 40px 20px;
+
+
+}
+
+.footer-row .column {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+/* ----- Logo & About ----- */
+.mid-footer .logo img {
+  width: 150px;
+
+}
+
+.mid-footer .para {
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.mid-footer .para i {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #fff;
+  transition: opacity .2s;
+}
+
+.mid-footer .para i:hover {
+  opacity: .8;
+}
+
+/* ----- Quick Links Column ----- */
+.list h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.list ul {
+  list-style: none;
+  margin-top: 15px;
+  margin-left: 60px;
+  font-size: 13px;
+}
+
+.list ul li {
+  margin-bottom: 10px;
+}
+
+.list ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: opacity .2s;
+}
+
+.list ul li a:hover {
+  opacity: .8;
+}
+
+/* ----- Contact Column ----- */
+.footer-container h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.footer-container p,
+.footer-container a {
+  font-size: 12px;
+  color: #fff;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.footer-container a:hover {
+  opacity: .8;
+}
+
+/* ----- Bottom Footer Bar ----- */
+footer.footer {
+
+
+  background: #000;
+  text-align: center;
+  padding: 15px 0;
+
+}
+
+footer.footer p {
+  color: #ccc;
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+footer.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer.footer a:hover {
+  opacity: .8;
+}
